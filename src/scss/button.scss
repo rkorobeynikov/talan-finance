@@ -23,9 +23,19 @@
 .button.button--mobile-small {
   padding: 8px 0 8px;
   font-size: 12px;
+
+  @media (min-width: 768px) {
+    padding: 12px 0 10px;
+    font-size: 14px;
+  }
 }
 
 .button--primary.button--mobile-small {
   padding: 9px 0 9px;
   font-size: 12px;
+
+  @media (min-width: 768px) {
+    padding: 13px 0 11px;
+    font-size: 14px;
+  }
 }

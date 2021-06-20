@@ -1,0 +1,21 @@
+.person {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.person__image {
+  border-radius: 50%;
+  overflow: hidden;
+
+}
+
+.person__img {
+  width: 40px;
+  display: block;
+}
+
+.person__name {
+  margin-left: 20px;
+}

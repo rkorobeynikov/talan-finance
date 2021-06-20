@@ -25,6 +25,7 @@
 
 .protection-section__inner {
   @include page-inner();
+  position: relative;
 }
 
 .protection-section__title {
@@ -75,16 +76,16 @@
 
 .protection-section__list-item--graph {
   background: url("../img/protection-graph.svg") 0 2px no-repeat;
-  background-size: 40px;
+  background-size: 66px;
 }
 
 .protection-section__list-item--hand {
   background: url("../img/protection-hand.svg") 0 2px no-repeat;
-  background-size: 40px;
+  background-size: 66px;
 }
 
 .protection-section__list-item--eagles {
   background: url("../img/protection-eagles.svg") 0 2px no-repeat;
-  background-size: 40px;
+  background-size: 66px;
 }
 

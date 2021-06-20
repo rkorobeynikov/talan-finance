@@ -13,11 +13,10 @@
         <img src="img/logo.svg" alt="Талан Финанс" class="hero-section__logo">
         <p class="hero-section__description">Федеральный девелопер Талан открывает новые инструменты инвестирования с гарантированной доходностью в одну из самых консервативных и надежных сфер бизнеса-недвижимость.</p>
       </header>
-      <h1 class="hero-section__title"><em>Инвестиции</em> в новостройки, без покупки квартиры</h1>
+      <h1 class="hero-section__title"><em>Инвестиции</em> в недвижимость без покупки квартиры</h1>
       <ul class="hero-section__list">
         <li class="hero-section__list-item">от 300 000 рублей</li>
         <li class="hero-section__list-item">до 12% годовых</li>
-        <li class="hero-section__list-item">от 15 месяцев</li>
       </ul>
       <section class="callback-form callback-form--transparent hero-section__form">
         <div class="callback-form__inner callback-form__inner--transparent-form">
@@ -36,9 +35,13 @@
               <span class="form__checkbox-label">Даю <a href="#">согласие</a> на обработку моих персональных данных, с условиями <a href="#">политики</a> ознакомлен</span>
             </label>
           </form>
+          <div class="callback-form__form callback-form__form--success">
+            <h3 class="callback-form__success-title">Заявка отправлена!</h3>
+            <p class="callback-form__success-description">Наши специалисты по инвестированию свяжутся с вами в течение рабочего дня.</p>
+          </div>
         </div>
       </section>
-      <button type="button" class="hero-section__modal-btn button button--mobile-small">Отправить заявку на звонок</button>
+      <button type="button" data-micromodal-trigger="callback-request" class="hero-section__modal-btn button button--mobile-small">Отправить заявку на звонок</button>
       <a href="#income-calculator-section" class="hero-section__cta-btn button button--primary button--mobile-small">Рассчитать свой доход</a>
     </div>
   </section>
@@ -49,7 +52,7 @@
         <div class="map-section__stats">
           <ul class="map-stats">
             <li class="map-stats__item">
-              <span class="map-stats__value">18</span>
+              <span class="map-stats__value">19</span>
               <span class="map-stats__description">лет на рынке недвижимости</span>
             </li>
             <li class="map-stats__item">
@@ -61,7 +64,7 @@
               <span class="map-stats__description">тысяч жителей живут в наших домах</span>
             </li>
             <li class="map-stats__item">
-              <span class="map-stats__value">13</span>
+              <span class="map-stats__value">10</span>
               <span class="map-stats__description">городов присутствия</span>
             </li>
           </ul>
@@ -121,15 +124,15 @@
       <h2 class="income-calculator-section__title">Расчитайте ваш доход</h2>
       <form action="" class="income-calculator">
         <div class="income-calculator__type">
-          <label class="income-calculator__form-label">Выберите объект инвестиции:</label>
+          <label class="income-calculator__form-label">Выберите вариант инвестирования:</label>
           <div class="income-calculator__type-radios">
             <label class="income-calculator__type-label">
               <input type="radio" checked class="income-calculator__radio visually-hidden" name="investment-type" data-percent-rate="4">
               <span class="income-calculator__radio-label calculator-option-btn">
                 <span class="calculator-option-btn__title">В квартиру</span>
                 <span class="calculator-option-btn__param">Минимальная сумма <strong>2 000 000 ₽</strong></span>
-                <span class="calculator-option-btn__param">Гарантированный доход <strong>4% годовых</strong></span>
-                <span class="calculator-option-btn__footer">Обеспечение возвратности инвестиций — имущественные права на недвижимость</span>
+                <span class="calculator-option-btn__param">Гарантированный доход <strong>до 4% годовых</strong></span>
+                <span class="calculator-option-btn__footer">Обеспечение возвратности инвестиций — имущественные права на будущий объект недвижимости</span>
                 <span class="calculator-option-btn__footer-mobile">
                   <span class="calculator-option-btn__choose-btn button button--mobile-small">Выбрать</span>
                 </span>
@@ -140,8 +143,20 @@
               <span class="income-calculator__radio-label calculator-option-btn">
                 <span class="calculator-option-btn__title">В жилой комплекс</span>
                 <span class="calculator-option-btn__param">Минимальная сумма <strong>300 000 ₽</strong></span>
-                <span class="calculator-option-btn__param">Гарантированный доход <strong>11% годовых</strong></span>
-                <span class="calculator-option-btn__footer">Обеспечение возвратности инвестиций — раскрытие эскроу-счета выбранного ЖК</span>
+                <span class="calculator-option-btn__param">Гарантированный доход <strong>до 11% годовых</strong></span>
+                <span class="calculator-option-btn__footer">Обеспечение возвратности инвестиций — будущий денежный поток выбранного ЖК после раскрытия эскроу-счета</span>
+                <span class="calculator-option-btn__footer-mobile">
+                  <span class="calculator-option-btn__choose-btn button button--mobile-small">Выбрать</span>
+                </span>
+              </span>
+            </label>
+            <label class="income-calculator__type-label">
+              <input type="radio" class="income-calculator__radio visually-hidden" name="investment-type" data-percent-rate="12">
+              <span class="income-calculator__radio-label calculator-option-btn">
+                <span class="calculator-option-btn__title">Инвестиции в компанию</span>
+                <span class="calculator-option-btn__param">Минимальная сумма <strong>300 000 ₽</strong></span>
+                <span class="calculator-option-btn__param">Гарантированный доход <strong>до 12% годовых</strong></span>
+                <span class="calculator-option-btn__footer">Обеспечение возвратности инвестиций — репутация ГК Талан</span>
                 <span class="calculator-option-btn__footer-mobile">
                   <span class="calculator-option-btn__choose-btn button button--mobile-small">Выбрать</span>
                 </span>
@@ -168,7 +183,7 @@
           <p class="income-calculator__total-param">Чистый доход: <output id="net-income" class="income-calculator__param-value">357 892 ₽</output></p>
           <p class="income-calculator__total-param">Подоходный налог: <output id="tax" class="income-calculator__param-value">53 478 ₽</output></p>
         </fieldset>
-        <a href="#" class="income-calculator__cta-btn button button--primary">Отправить заявку на инвестицию</a>
+        <button type="button" data-micromodal-trigger="investment-request" class="income-calculator__cta-btn button button--primary">Отправить заявку на инвестирование</button>
       </form>
     </div>
   </section>
@@ -179,18 +194,18 @@
       <div class="purposes-section__list">
         <div class="purposes-section__list-item purposes-section__list-item--map">
           <h3 class="purposes-section__list-title">Наш подход</h3>
-          <p class="purposes-section__list-paragraph">Привлекаемые деньги используются на приобретение земельных участков и высоколиквидных активов</p>
+          <p class="purposes-section__list-paragraph">привлекаемые денежные средства используются на приобретение земельных участков и высоколиквидных активов</p>
         </div>
         <div class="purposes-section__list-item purposes-section__list-item--target">
           <h3 class="purposes-section__list-title">Цель компании</h3>
-          <p class="purposes-section__list-paragraph">Дать возможность жителям 43 регионов России жить в домах высокого уровня</p>
+          <p class="purposes-section__list-paragraph">Дать возможность жителям России жить в домах высокого уровня</p>
         </div>
       </div>
     </div>
   </section>
   <section class="callback-form callback-form--option-1">
     <div class="callback-form__inner">
-      <h2 class="callback-form__title">Порог входа всего 300 000 рублей</h2>
+      <h2 class="callback-form__title">Минимальная сумма инвестиций всего 300 000 рублей</h2>
       <p class="callback-form__description">Наши специалисты ответят вам в течение рабочего дня</p>
       <form action="" class="callback-form__form form">
         <p class="form__item">
@@ -239,7 +254,7 @@
       <div class="protection-section__list">
         <p class="protection-section__list-item protection-section__list-item--graph">«Талан-Финанс» является частью группы компаний Талан. ГК «Талан» отвечает по обязательствам дочерних компаний и имеет в портфеле 1.5 млн м2 строящейся и будущей недвижимости.</p>
         <p class="protection-section__list-item protection-section__list-item--hand">Банк эскроу-агент полностью контролирует процесс строительства — целевое расходование денежных средств, соблюдение темпов строительства, цену квадратного метра, темпы продаж.</p>
-        <p class="protection-section__list-item protection-section__list-item--eagles">Контроль за стороны ЦБ, так как «Талан-Финанс» является публичной компанией, эмитентом облигационного выпуска.</p>
+        <p class="protection-section__list-item protection-section__list-item--eagles">Контроль за стороны ЦБ, так как «Талан-Финанс» является публичной компанией, эмитентом облигаций.</p>
       </div>
     </div>
   </section>
@@ -443,31 +458,78 @@
       <h2 class="faq-section__title">Часто задаваемые вопросы</h2>
       <ul class="faq-accordion js-accordion" data-animation="on" data-multi-items="on">
         <li class="faq-accordion__item js-accordion__item">
-          <button class="faq-accordion__header js-tab-focus" type="button">Отразится ли на инвесторах ситуация, если компания вдруг не сможет продать все квартиры в очередном жилом комплексе?</button>
+          <button class="faq-accordion__header js-tab-focus" type="button">Для чего застройщику привлекать инвестиции частных инвесторов?</button>
           <div class="faq-accordion__panel js-accordion__panel">
-            <p>Чтобы было понятнее, начнем с того, что после сдачи объекта и ввода его в эксплуатацию происходит следующее:</p>
-            <p>1. Покупатели забирают свои квартиры;</p>
-            <p>2. Банк открывает девелоперу доступ к деньгам на эскроу-счетах и забирает обратно свою долю с процентами;</p>
-            <p>3. Застройщик выплачивает инвесторам их активы и прибыль;</p>
-            <p>4. Остаток средств застройщик оставляет себе.</p>
-            <p>Если вдруг не все квартиры будут реализованы к моменту сдачи дома, и на эскроу-счетах будет недостаточно денег, чтобы расплатиться с инвесторами, у «Талана» всегда есть запасной план действий. Мы сделаем все, чтобы продать оставшиеся квартиры – в компании есть талантливые специалисты, которые отвечают за продажи, а также проверенные маркетинговые инструменты. В любом случае, все обязательства перед инвесторами компания выполнит. Стоит добавить, что за 18 лет у «Талана» ни разу не возникала ситуация, чтобы на этапе ввода дома в эксплуатацию в нем оставалась хотя бы одна не реализованная квартира.</p>
+            <p>Любая девелоперская компания привлекает денежные средства на развитие или строительство. Для кредитования строительных проектов на рынке традиционно используется механизм проектного финансирования: банк дает средства на стройку, а обеспечением по долгам служат генерируемые проектом денежные потоки. Банк получает за пользование деньгами проценты. И мы задумались, что правильнее делиться доходом не только с банком, но и со своими клиентами – людьми для которых мы строим, растем и для реализации потребностей которых по сути и существует компания. Привлекаемые деньги мы используем, прежде всего, на приобретение земельных участков и высоколиквидных активов. Наш подход дать возможность принять участие в развитии компании, быть сопричастным к делу строительства для родных городов с заботой о людях. И, конечно же, получать гарантированный доход</p>
           </div>
         </li>
 
         <li class="faq-accordion__item js-accordion__item">
-          <button class="faq-accordion__header js-tab-focus" type="button">Почему инвестирование в «Талан» выгодно и для клиента, и для застройщика?</button>
+          <button class="faq-accordion__header js-tab-focus" type="button">Какие есть гарантии возвратности инвестиции?</button>
 
           <div class="faq-accordion__panel js-accordion__panel">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum a ab quae quas optio ut officia quia? Modi at impedit dolorem est voluptatem facilis, beatae atque tenetur, soluta dolorum inventore sapiente laborum. Alias esse soluta porro distinctio aperiam, qui suscipit.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum a ab quae quas optio ut officia quia? Modi at impedit dolorem est voluptatem facilis, beatae atque tenetur, soluta dolorum inventore sapiente laborum. Alias esse soluta porro distinctio aperiam, qui suscipit.</p>
+            <p>Ряд предложений компании – обеспечен специальными опционами, некоторые -квадратными метрами. Но помимо этого, возвратность инвестиций обеспечивается и самой системой взаимоотношений девелоперской компании и инвестора. Ваши инвестиции в «Талан» защищены на трех уровнях:</p>
+            <p>1 уровень. «Талан-Финанс» является частью группы компаний «Талан». ГК «Талан» отвечает по обязательствам дочерних компаний и имеет в портфеле 1,5 млн кв. метров активов.</p>
+            <p>2 уровень. После ввода эскроу-счетов банк — эскроу-агент получил право контролировать деятельность застройщика и влиять на его работу. В результате банк контролирует целевую направленность платежей, стоимость квадратного метра, темпы продаж и многое другое в деятельности застройщиков, входящих в группу компаний «Талан».</p>
+              <p>3 уровень. Так как один из участников взаимоотношений - компания «Талан-Финанс», которая является эмитентом облигаций, - то деятельность компании, в том числе, подлежит контролю Центробанком РФ. Компания-эмитент перед выпуском ценных бумаг должна пройти многоуровневую систему аудита, найти надежного финансового партнера, далее - компании присваивается определенный рейтинг надежности, компания обязана предоставлять отчётность в соответствии с требованиями МСФО, производить на регулярной основе публичное раскрытие информации о своей деятельности и деятельности ряда аффилированных компаний, и проч.</p>
+            <p>Таким образом, полагаем, что инвестиции в компанию «Талан» являются надежными и на высоком уровне -  защищенными.</p>
           </div>
         </li>
 
         <li class="faq-accordion__item  js-accordion__item">
-          <button class="faq-accordion__header js-tab-focus" type="button">Как использование счетов эскроу влияет на безопасность вложений в недвижимость, и почему для инвестирования стоит выбирать именно такие объекты?</button>
+          <button class="faq-accordion__header js-tab-focus" type="button">Что будет с моими инвестициями, если компания ООО "Талан-Финанс" обанкротится?</button>
 
           <div class="faq-accordion__panel js-accordion__panel">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum a ab quae quas optio ut officia quia? Modi at impedit dolorem est voluptatem facilis, beatae atque tenetur, soluta dolorum inventore sapiente laborum. Alias esse soluta porro distinctio aperiam, qui suscipit.</p>
+            <p>Если говорить о вероятности банкротства компании, нужно понимать специфику ее основной деятельности. Основной вид деятельности группы компаний «Талан» – строительство многоквартирных домов. С 2019 года строительная отрасль перешла на механизм финансирования Проектов с использованием специальных счетов эскроу. Суть механизма состоит в том, что в настоящий момент строительство финансируют не дольщики, а банк. Банк контролирует все этапы строительства и, как основной инвестор проекта, максимально заинтересован в том, чтобы строительство завершилось в срок и с заложенными в финансовую модель показателями.</p>
+          </div>
+        </li>
+
+        <li class="faq-accordion__item  js-accordion__item">
+          <button class="faq-accordion__header js-tab-focus" type="button">Есть ли страхование займов?</button>
+
+          <div class="faq-accordion__panel js-accordion__panel">
+            <p>Такой вид обеспечения возвратности, как страхование займов, – компания не применяет.</p>
+            <p>Компания реализует иные (в том числе альтернативные) меры и способы обеспечения возвратности инвестиций.</p>
+            <p>Ряд предложений компании – обеспечен специальными опционами, некоторые -квадратными метрами. Но помимо этого, возвратность инвестиций обеспечивается и самой системой взаимоотношений девелоперской компании и инвестора. Ваши инвестиции в «Талан» защищены на трех уровнях:</p>
+            <p>1 уровень. «Талан-Финанс» является частью группы компаний «Талан». ГК «Талан» отвечает по обязательствам дочерних компаний и имеет в портфеле 1,5 млн кв. метров активов.</p>
+            <p>2 уровень. После ввода эскроу-счетов банк — эскроу-агент получил право контролировать деятельность застройщика и влиять на его работу. В результате банк контролирует целевую направленность платежей, стоимость квадратного метра, темпы продаж и многое другое в деятельности застройщиков, входящих в группу компаний «Талан».</p>
+            <p>3 уровень. Так как один из участников взаимоотношений - компания «Талан-Финанс», которая является эмитентом облигаций, - то деятельность компании, в том числе, подлежит контролю Центробанком РФ. Компания-эмитент перед выпуском ценных бумаг должна пройти многоуровневую систему аудита, найти надежного финансового партнера, далее - компании присваивается определенный рейтинг надежности, компания обязана предоставлять отчётность в соответствии с требованиями МСФО, производить на регулярной основе публичное раскрытие информации о своей деятельности и деятельности ряда аффилированных компаний, и проч.</p>
+            <p>Таким образом, полагаем, что инвестиции в компанию «Талан» являются надежными и на высоком уровне -  защищенными.</p>
+          </div>
+        </li>
+
+        <li class="faq-accordion__item  js-accordion__item">
+          <button class="faq-accordion__header js-tab-focus" type="button">В какой срок я получаю возврат тела займа и проценты?</button>
+
+          <div class="faq-accordion__panel js-accordion__panel">
+            <p>Зачастую, срок возвратности тела займа привязан к раскрытию эскроу-счетов конкретного проекта, что позволяет сформировать финансовый поток для возврата займов. Договором могут быть предусмотрены периодические выплаты процентов: раз в квартал, 2 раза в год, ежегодно, либо проценты уплачиваются в конце инвестирования.</p>
+          </div>
+        </li>
+
+        <li class="faq-accordion__item  js-accordion__item">
+          <button class="faq-accordion__header js-tab-focus" type="button">Что происходит, если возникла необходимость получить свои инвестиции досрочно?</button>
+
+          <div class="faq-accordion__panel js-accordion__panel">
+            <p>Зачастую, срок возвратности тела займа привязан к раскрытию эскроу-счетов конкретного проекта, что позволяет сформировать финансовый поток для возврата займов. Тем не менее, ситуации бывают разными. Поэтому условия досрочного прекращения договора займа по соглашению сторон - отражены в договоре.</p>
+          </div>
+        </li>
+
+        <li class="faq-accordion__item  js-accordion__item">
+          <button class="faq-accordion__header js-tab-focus" type="button">Кто уплачивает НДФЛ, что делать, если не хочу его платить?</button>
+
+          <div class="faq-accordion__panel js-accordion__panel">
+            <p>Вам не нужно самостоятельно уплачивать налог. Мы сделаем это сами.</p>
+            <p>Согласно статье 226 НК РФ, организации, от которых вы получили доходы по займу, обязаны удержать и перевести в бюджет сумму налога.</p>
+            </p>
+          </div>
+        </li>
+
+        <li class="faq-accordion__item  js-accordion__item">
+          <button class="faq-accordion__header js-tab-focus" type="button">Как изменилась сфера недвижимости с введением эскроу. Почему это преимущество для инвесторов?</button>
+
+          <div class="faq-accordion__panel js-accordion__panel">
+            <p>После перехода на проектное финансирование с обязательным использованием счетов эскроу с 1 июля 2019 года, у застройщиков появилась потребность в привлечении инвестиций на покупку земельных участков для дальнейшего развития. Если проект застройщика прошёл банковскую экспертизу и банк согласился стать основным инвестором нового строительного проекта, значит, что по всем критериям безопасности инвестиций, выдвигаемых банком, и сам застройщик, и его проект, в том числе и финансовая модель проекта, прошли проверку.</p>
+            <p>Чаще всего, - выплаты инвесторам производятся после раскрытия счетов эскроу. Все операции законны и соответствуют действующему законодательству РФ.</p>
           </div>
         </li>
       </ul>
@@ -479,10 +541,18 @@
         <h2 class="page-footer__title">Контакты</h2>
         <address class="page-footer__address">426077, Ижевск, ул. Красноармейская, 86</address>
         <a href="mailto:invest@talan.group" class="page-footer__mail-link">invest@talan.group</a>
-        <p class="page-footer__phone">Руководитель направления: +7 (3412) 99-88-11 доб. 9978</p>
+        <p class="page-footer__phone">
+          Руководитель направления:
+          <span class="person">
+            <span class="person__image">
+              <img class="person__img" src="img/shustova.jpg" alt="Шустова Анастасия Викторовна">
+            </span>
+            <span class="person__name">Шустова<br> Анастасия Викторовна</span>
+          </span>
+          <a href="tel:+73412998811">+7 (3412) 99-88-11 доб. 9978</a></p>
       </div>
       <div class="page-footer__offices">
-        <h3 class="page-footer__subtitle">Обращайтесь в ближайший офис продаж:</h3>
+        <h3 class="page-footer__subtitle">Обращайтесь в ближайший офис компании Талан:</h3>
         <ul class="page-footer__list">
           <li>Ижевск: <a href="tel:+73412509509">+7 (3412) 509-509</a></li>
           <li>Набережные Челны: <a href="tel:+78552919919">+7 (8552) 919-919</a></li>
@@ -495,11 +565,80 @@
       </div>
     </div>
   </footer>
+  <div class="modal micromodal-slide" id="callback-request" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+      <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="callback-request-title">
+        <header>
+          <button aria-label="Закрыть окно" class="modal__close" data-micromodal-close></button>
+        </header>
+
+        <div id="callback-request-content">
+          <section class="callback-form">
+            <div class="callback-form__inner">
+              <h2 id="callback-request-title" class="callback-form__title">Отправьте заявку на обратный звонок</h2>
+              <p class="callback-form__description">Наши специалисты ответят вам в течение рабочего дня</p>
+              <form action="" class="callback-form__form form">
+                <p class="form__item">
+                  <input type="text" placeholder="Имя" class="form__input">
+                </p>
+                <p class="form__item">
+                  <input type="tel" placeholder="Телефон" class="form__input">
+                </p>
+                <p class="form__item">
+                  <button type="submit" class="form__btn">Перезвоните мне!</button>
+                </p>
+                <label class="form__consent">
+                  <input type="checkbox" class="form__checkbox">
+                  <span class="form__checkbox-label">Даю <a href="#">согласие</a> на обработку моих персональных данных, с условиями <a href="#">политики</a> ознакомлен</span>
+                </label>
+              </form>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal micromodal-slide" id="investment-request" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+      <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="investment-request-title">
+        <header>
+          <button aria-label="Закрыть окно" class="modal__close" data-micromodal-close></button>
+        </header>
+
+        <div id="investment-request-content">
+          <section class="callback-form">
+            <div class="callback-form__inner">
+              <h2 id="investment-request-title" class="callback-form__title">Отправьте заявку на инвестирование</h2>
+              <p class="callback-form__description">Наши специалисты ответят вам в течение рабочего дня</p>
+              <form action="" class="callback-form__form form">
+                <p class="form__item">
+                  <input type="text" placeholder="Имя" class="form__input">
+                </p>
+                <p class="form__item">
+                  <input type="tel" placeholder="Телефон" class="form__input">
+                </p>
+                <p class="form__item">
+                  <button type="submit" class="form__btn">Перезвоните мне!</button>
+                </p>
+                <label class="form__consent">
+                  <input type="checkbox" class="form__checkbox">
+                  <span class="form__checkbox-label">Даю <a href="#">согласие</a> на обработку моих персональных данных, с условиями <a href="#">политики</a> ознакомлен</span>
+                </label>
+              </form>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/vendor/micromodal.min.js"></script>
   <script src="js/utils.js"></script>
   <script src="js/accordion.js"></script>
   <script src="js/swipe-content.js"></script>
   <script src="js/map.js"></script>
   <script src="js/tabs.js"></script>
+  <script src="js/modals.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
   <script>
 

@@ -16,11 +16,13 @@
   background-size: 30px 30px;
 
   @media (min-width: 768px) {
-    margin-left: 28px;
-    padding: 25px 10px 0 61px;
-    background-position: 13px 18px;
+    margin-left: 10px;
+    padding: 25px 10px 0 50px;
+    background-position: 3px 16px;
     background-repeat: no-repeat;
-    min-height: 28px;
+    background-size: 36px;
+    min-height: 46px;
+    line-height: 1.2em;
   }
 }
 
@@ -33,7 +35,7 @@
   @media (min-width: 768px) {
     font-size: 14px;
     background: url("data:image/svg+xml,%3Csvg width='18' height='18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='9' cy='9' r='8' stroke='%23CEA072'/%3E%3Cpath d='M7 5l5 4-5 4' stroke='%23CEA072' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") 12px 0 no-repeat;
-    margin: 26px 0 0;
+    margin: 7px 0 0;
     padding: 0 10px 0 42px;
   }
 }
@@ -60,6 +62,10 @@
   @media (min-width: 768px) {
     display: block;
   }
+}
+
+.income-calculator__radio:checked + .income-calculator__radio-label .calculator-option-btn__footer {
+  border-top: 1px solid $color-brand;
 }
 
 .calculator-option-btn__footer-mobile {

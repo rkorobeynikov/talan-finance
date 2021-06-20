@@ -8,7 +8,8 @@
 }
 
 .purposes-section__inner {
-  @include page-inner()
+  @include page-inner();
+  position: relative;
 }
 
 .purposes-section__title {

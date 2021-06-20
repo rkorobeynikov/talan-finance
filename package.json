@@ -34,6 +34,7 @@
   "author": "Roman Korobeynikov",
   "license": "ISC",
   "dependencies": {
+    "micromodal": "^0.4.6",
     "tiny-slider": "^2.9.3"
   }
 }
