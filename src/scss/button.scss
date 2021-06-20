@@ -1,0 +1,31 @@
+.button {
+  appearance: none;
+  display: inline-block;
+  border: 1px solid $color-brand;
+  font-family: $heading-font;
+  font-size: 14px;
+  line-height: 1.2em;
+  text-align: center;
+  border-radius: 8px;
+  color: $color-brand;
+  text-decoration: none;
+  padding: 12px 0 10px;
+  background: transparent;
+}
+
+.button--primary {
+  background: $color-brand;
+  color: $color-white;
+  padding: 13px 0 11px;
+  border: none;
+}
+
+.button.button--mobile-small {
+  padding: 8px 0 8px;
+  font-size: 12px;
+}
+
+.button--primary.button--mobile-small {
+  padding: 9px 0 9px;
+  font-size: 12px;
+}

@@ -1,0 +1,74 @@
+.callback-form {
+  background: $color-darkgray-bg;
+  padding: 41px 0 40px;
+
+  @media (min-width: 768px) {
+    padding: 28px 0 56px;
+  }
+}
+
+.callback-form--transparent {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 6px 40px 27px;
+  max-width: 874px;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.callback-form--option-2 {
+
+  @media (min-width: 768px) {
+    background-image: url("../img/callback-bg-variant-2.png");
+    background-position: right bottom;
+    background-size: 237px 207px;
+    background-repeat: no-repeat;
+  }
+}
+
+.callback-form--option-1 {
+
+
+  @media (min-width: 768px) {
+    background-image: url("../img/callback-bg-variant-1.png");
+    background-position: right top;
+    background-size: 237px 207px;
+    background-repeat: no-repeat;
+  }
+}
+
+.callback-form__inner {
+  @include page-inner();
+}
+
+.callback-form__inner--transparent-form {
+  padding: 0;
+}
+
+.callback-form__title {
+  @include section-title();
+  color: $color-white;
+  margin: 0;
+}
+
+.callback-form__description {
+  margin: 21px 0 0;
+  color: $color-white;
+  font-size: 13px;
+  line-height: 1.5em;
+
+  @media (min-width: 768px) {
+    font-size: 14px;
+    margin: 12px 0 0;
+    line-height: 1.43em;
+  }
+}
+
+.callback-form__form {
+  margin: 18px 0 0;
+
+  @media (min-width: 768px) {
+    margin: 22px 0 0;
+  }
+}
+

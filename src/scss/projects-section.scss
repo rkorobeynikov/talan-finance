@@ -1,0 +1,34 @@
+.projects-section {
+
+}
+
+.projects-section__inner {
+  @include page-inner();
+  padding-top: 41px;
+  padding-bottom: 4px;
+
+  @media (min-width: 768px) {
+    padding-top: 87px;
+  }
+}
+
+.projects-section__title {
+  @include section-title();
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.projects-section__awards {
+  display: flex;
+  font-size: 14px;
+  line-height: 1.42em;
+  border-top: 1px solid $color-brand;
+  margin: 36px 0 0;
+  padding: 36px 0 80px;
+}
+
+.is-hidden {
+  display: none!important
+}
+
+

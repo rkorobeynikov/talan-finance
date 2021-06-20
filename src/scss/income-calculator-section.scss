@@ -1,0 +1,14 @@
+.income-calculator-section {
+  padding: 41px 0 60px;
+
+  @media (min-width: 768px) {
+    padding: 60px 0 60px;
+  }
+}
+
+.income-calculator-section__title {
+  @include page-inner();
+  @include section-title();
+  margin-top: 0;
+  margin-bottom: 0;
+}

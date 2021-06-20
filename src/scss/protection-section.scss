@@ -1,0 +1,90 @@
+.protection-section {
+  background: #f7f7f7;
+  position: relative;
+  padding: 41px 0 57px;
+
+  @media (min-width: 768px) {
+    padding: 60px 0 57px;
+  }
+}
+
+.protection-section::before {
+
+  @media (min-width: 768px) {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 385px;
+    height: 720px;
+    background: url("../img/protection-section-bg.png") 0 0 no-repeat;
+    background-size: 385px 720px;
+    right: 0;
+    bottom: 78px;
+  }
+}
+
+.protection-section__inner {
+  @include page-inner();
+}
+
+.protection-section__title {
+  @include section-title();
+  max-width: 470px;
+  margin: 0;
+
+  em {
+    color: $color-brand;
+    font-style: normal;
+  }
+}
+
+.protection-section__list {
+  display: flex;
+  margin: 20px 0 0;
+  flex-direction: column;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    margin: 50px 0 0;
+  }
+}
+
+.protection-section__list-item {
+  padding-left: 52px;
+  font-size: 13px;
+  line-height: 1.43em;
+  padding-top: 3px;
+  margin: 27px 0 0;
+
+  @media (min-width: 768px) {
+    padding-left: 92px;
+    padding-top: 0;
+    font-size: 14px;
+    width: 30.84%;
+    margin: -2px 0 0 3.74%;
+  }
+}
+
+.protection-section__list-item:first-child {
+  margin-top: 0;
+
+  @media (min-width: 768px) {
+    margin-left: 0;
+  }
+}
+
+.protection-section__list-item--graph {
+  background: url("../img/protection-graph.svg") 0 2px no-repeat;
+  background-size: 40px;
+}
+
+.protection-section__list-item--hand {
+  background: url("../img/protection-hand.svg") 0 2px no-repeat;
+  background-size: 40px;
+}
+
+.protection-section__list-item--eagles {
+  background: url("../img/protection-eagles.svg") 0 2px no-repeat;
+  background-size: 40px;
+}
+

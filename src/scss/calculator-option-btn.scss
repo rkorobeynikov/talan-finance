@@ -1,0 +1,76 @@
+.calculator-option-btn {
+  border: 1px solid #c0c0c0;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.calculator-option-btn__title {
+  font-size: 18px;
+  font-family: $heading-font;
+  font-weight: 500;
+  padding: 18px 8px 0 55px;
+  background: url("data:image/svg+xml,%3Csvg width='36' height='35' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M36 17.813c0 9.292-8.063 16.83-18 16.83-9.938 0-18-7.538-18-16.83C0 8.523 8.063.984 18 .984c9.938 0 18 7.538 18 16.83z' fill='%23CEA072'/%3E%3Cpath d='M27.038 10.836c-.188 0-.338-.14-.338-.315v-.666h-9.675v7.152h6.038c.187 0 .337.14.337.316 0 .175-.15.315-.337.315h-6.038v2.104c0 .175-.15.315-.337.315-.188 0-.338-.14-.338-.315V9.855h-4.313v13.673h4.275v-1.507c0-.176.15-.316.338-.316.188 0 .338.14.338.316v1.542h9.675v-5.925h-1.35c-.188 0-.338-.14-.338-.315 0-.176.15-.316.337-.316h1.35v-5.434c0-.176.15-.316.338-.316.188 0 .337.14.337.316v12.27c0 .176-.15.316-.337.316H11.7c-.188 0-.337-.14-.337-.315V9.539c0-.175.15-.315.337-.315h15.338c.187 0 .337.14.337.315v.982c0 .175-.15.315-.337.315zm-18.6.07H9.45l-.525-.77-.488.77zm.787-1.542l1.125 1.683a.25.25 0 010 .315c-.075.105-.188.176-.3.176h-.788v1.332c0 .175-.15.316-.337.316-.188 0-.338-.14-.338-.316v-1.332H7.8c-.113 0-.225-.07-.3-.176a.25.25 0 010-.315l1.125-1.683a.35.35 0 01.3-.14c.15 0 .262.035.3.14zm-.263 13.884l.525-.771H8.475l.487.77zm1.126-1.403c.112 0 .225.07.3.176a.25.25 0 010 .315L9.261 24.02a.35.35 0 01-.3.14.475.475 0 01-.3-.14l-1.125-1.683a.25.25 0 010-.315c.075-.105.188-.176.3-.176h.788v-8.134c0-.175.15-.315.337-.315.188 0 .338.14.338.315v8.17h.787v-.036zm15.487 5.084l.825-.49-.825-.491v.981zm-12.412 0v-.946l-.788.455.787.491zm14.062-.771c.112.07.15.175.15.28 0 .106-.075.21-.15.28l-1.8 1.053c-.038.035-.113.035-.188.035-.074 0-.112 0-.15-.035-.112-.07-.187-.176-.187-.28v-.737H13.838v.736c0 .105-.075.21-.188.28-.037.036-.113.036-.15.036-.075 0-.113 0-.188-.035l-1.8-1.052a.312.312 0 01-.15-.28c0-.106.075-.211.15-.281l1.8-1.052a.297.297 0 01.338 0c.112.07.188.175.188.28v.737H24.9v-.736c0-.106.075-.21.188-.281a.297.297 0 01.337 0l1.8 1.052z' fill='%23fff'/%3E%3C/svg%3E") 13px 13px no-repeat;
+  min-height: 26px;
+  background-size: 30px 30px;
+
+  @media (min-width: 768px) {
+    margin-left: 28px;
+    padding: 25px 10px 0 61px;
+    background-position: 13px 18px;
+    background-repeat: no-repeat;
+    min-height: 28px;
+  }
+}
+
+.calculator-option-btn__param {
+  font-size: 13px;
+  padding: 0 25px 0 55px;
+  margin: 11px 0 0;
+  line-height: 1.43em;
+
+  @media (min-width: 768px) {
+    font-size: 14px;
+    background: url("data:image/svg+xml,%3Csvg width='18' height='18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='9' cy='9' r='8' stroke='%23CEA072'/%3E%3Cpath d='M7 5l5 4-5 4' stroke='%23CEA072' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") 12px 0 no-repeat;
+    margin: 26px 0 0;
+    padding: 0 10px 0 42px;
+  }
+}
+
+.calculator-option-btn__param + .calculator-option-btn__param {
+  margin: 11px 0 0;
+
+  @media (min-width: 768px) {
+    margin: 14px 0 0;
+  }
+}
+
+
+.calculator-option-btn__footer {
+  font-size: 14px;
+  font-weight: 700;
+  padding: 18px 8px 18px 14px;
+  border-top: 1px solid #c0c0c0;
+  margin: 20px 0 0;
+  line-height: 1.43em;
+  display: none;
+
+
+  @media (min-width: 768px) {
+    display: block;
+  }
+}
+
+.calculator-option-btn__footer-mobile {
+  display: flex;
+  padding: 17px 14px 13px;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.calculator-option-btn__choose-btn {
+  flex: 1;
+}

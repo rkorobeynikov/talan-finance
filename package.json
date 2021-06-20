@@ -1,0 +1,39 @@
+{
+  "name": "talan-finance",
+  "devDependencies": {
+    "autoprefixer": "^10.2.6",
+    "browser-sync": "2.26.x",
+    "del": "^4.1.1",
+    "gulp": "4.0.x",
+    "gulp-csso": "^3.0.1",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-plumber": "1.2.x",
+    "gulp-postcss": "^9.0.0",
+    "gulp-posthtml": "^3.0.4",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "2.6.x",
+    "gulp-svgstore": "^7.0.1",
+    "gulp-webp": "^4.0.1",
+    "postcss": "^8.3.0",
+    "posthtml-include": "^1.2.0",
+    "stylelint": "^13.13.1",
+    "stylelint-config-htmlacademy": "0.1.x",
+    "svgstore": "^3.0.0-2"
+  },
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "gulp build",
+    "editorconfig": "editorconfig-cli",
+    "start": "gulp start",
+    "stylelint": "stylelint \"src/sass/**/*.sass\" --syntax sass",
+    "test": "npm run editorconfig && npm run stylelint"
+  },
+  "author": "Roman Korobeynikov",
+  "license": "ISC",
+  "dependencies": {
+    "tiny-slider": "^2.9.3"
+  }
+}

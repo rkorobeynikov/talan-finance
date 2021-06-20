@@ -1,0 +1,82 @@
+.financial-results-section {
+  padding: 41px 0 39px;
+
+  @media (min-width: 768px) {
+    padding: 60px 0 58px;
+  }
+}
+
+.financial-results-section__inner {
+  @include page-inner();
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.financial-results-section__title {
+  @include section-title();
+  align-self: flex-start;
+  margin: 0;
+}
+
+.financial-results-section__list {
+  display: flex;
+  list-style: none;
+  margin: 19px 0 0;
+  padding: 0;
+  align-self: stretch;
+  flex-direction: column;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    margin: 52px 0 0;
+    z-index: 1;
+  }
+}
+
+.financial-results-section__list-item {
+  margin: 12px 0 0;
+
+  @media (min-width: 768px) {
+    width: 30.84%;
+    margin-left: 3.74%;
+  }
+}
+
+.financial-results-section__list-item:first-child {
+  margin-top: 0;
+
+  @media (min-width: 768px) {
+    margin-left: 0;
+  }
+}
+
+.financial-results-section__btn {
+  margin: 22px 0 0;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+
+  @media (min-width: 768px) {
+    min-width: 330px;
+    margin: 23px 0 0;
+    width: auto;
+  }
+}
+
+.financial-results-section__footer-text {
+  margin: 18px 0 0;
+  padding-left: 62px;
+  font-size: 12px;
+  background: url("../img/bdo-logo.svg") 0 0 no-repeat;
+  position: relative;
+  z-index: 1;
+  line-height: 1.7em;
+  background-size: 50px;
+
+  @media (min-width: 768px) {
+    margin: 24px 0 0 13px;
+    padding-left: 78px;
+    font-size: 14px;
+  }
+}

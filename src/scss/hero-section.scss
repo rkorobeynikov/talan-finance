@@ -1,0 +1,140 @@
+.hero-section {
+  background: url("../img/hero-bg.jpg") center no-repeat;
+  background-size: cover;
+  color: $color-white;
+  padding: 0 0 24px;
+  min-height: 568px;
+  display: flex;
+  box-sizing: border-box;
+
+  @media (min-width: 768px) {
+    min-height: 700px;
+    padding: 0 0 40px;
+  }
+}
+
+.hero-section__inner {
+  @include page-inner();
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-section__description {
+  font-size: 13px;
+  line-height: 1.39em;
+  margin: 17px 0 0;
+
+  @media (min-width: 768px) {
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.42em;
+    margin: 0;
+  }
+}
+
+.hero-section__header {
+  padding: 19px 0 0;
+  position: relative;
+
+  @media (min-width: 768px) {
+    padding: 29px 200px 0;
+  }
+}
+
+.hero-section__logo {
+  width: 84px;
+
+  @media (min-width: 768px) {
+    position: absolute;
+    left: -1px;
+    top: 37px;
+  }
+}
+
+.hero-section__title {
+  font-family: $heading-font;
+  font-size: 24px;
+  line-height: 1.2em;
+  margin: 66px 0 0;
+  color: $color-white;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    font-size: 48px;
+    margin: 73px 0 0;
+  }
+
+  em {
+    display: block;
+    font-style: normal;
+    color: $color-brand;
+  }
+}
+
+.hero-section__list {
+  display: flex;
+  justify-content: center;
+  margin: 24px 0 0;
+  font-size: 18px;
+  padding: 0;
+  flex-direction: column;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    margin: 40px 0 0;
+  }
+}
+
+.hero-section__list-item {
+  margin-left: 0;
+  padding-left: 0;
+  list-style: none;
+  text-align: center;
+  margin-top: 7px;
+
+  @media (min-width: 768px) {
+    list-style: disc;
+    text-align: left;
+    margin-left: 35px;
+    padding-left: 2px;
+    margin-top: 0;
+  }
+}
+
+.hero-section__list-item:first-child {
+  @media (min-width: 768px) {
+    margin-left: 0;
+    padding-left: 0;
+    list-style: none;
+  }
+}
+
+.hero-section__form {
+  margin: 36px 0 0;
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+  }
+}
+
+.hero-section__modal-btn {
+  align-self: center;
+  min-width: 240px;
+  margin-top: auto;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.hero-section__cta-btn {
+  align-self: center;
+  min-width: 240px;
+  margin-top: 20px;
+
+  @media (min-width: 768px) {
+    margin-top: auto;
+  }
+}
+

@@ -1,0 +1,169 @@
+.faq-accordion {
+  list-style: none;
+  padding: 0;
+  margin: 2px 0 0;
+
+  @media (min-width: 768px) {
+    margin: 24px 0 0 92px;
+  }
+}
+
+.faq-accordion__item {
+  border-top: 1px solid $color-border;
+  margin-right: 0;
+  padding-bottom: 18px;
+  padding-top: 20px;
+
+  @media (min-width: 768px) {
+    margin-right: 92px;
+  }
+}
+
+.faq-accordion__item:first-child {
+  border-top: none;
+}
+
+.faq-accordion__header {
+  appearance: none;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  cursor: pointer;
+  position: relative;
+  padding: 0 34px 0 0;
+  border: none;
+  background: transparent;
+  font-family: $heading-font;
+  font-size: 16px;
+  line-height: 1.375em;
+  color: $color-brand;
+
+  @media (min-width: 768px) {
+    padding: 0 80px 0 0;
+    line-height: 1.23em;
+    font-size: 18px;
+  }
+}
+
+.faq-accordion__header::after {
+  content: "";
+  position: absolute;
+  right: -2px;
+  top: -3px;
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: url("data:image/svg+xml,%3Csvg width='24' height='24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23CEA072' d='M11 0h2v24h-2z'/%3E%3Cpath fill='%23CEA072' d='M24 11v2H0v-2z'/%3E%3C/svg%3E") 0 0 no-repeat;
+  transition: transform 0.2s ease-in-out;
+
+  @media (min-width: 768px) {
+    right: 15px;
+    top: -1px;
+  }
+}
+
+.faq-accordion__item--is-open .faq-accordion__header::after {
+  transform: rotate(45deg);
+}
+
+
+.faq-accordion__icon-plus {
+  .icon__group {
+    transform: rotate(-90deg);
+
+    > *:first-child {
+      transform: rotate(-90deg);
+    }
+  }
+}
+
+.faq-accordion__item--is-open > .faq-accordion__header {
+  > .faq-accordion__icon-arrow .icon__group { // animated arrow icon
+    > *:first-child {
+      transform: translateY(-3px) rotate(-90deg);
+    }
+
+    > *:last-child {
+      transform: translateY(-3px) rotate(90deg);
+    }
+  }
+
+  > .faq-accordion__icon-arrow-v2 .icon__group { // animated arrow icon v2
+    transform: rotate(-90deg);
+
+    > *:first-child, *:last-child {
+      stroke-dashoffset: 0;
+      transform: translateY(0px);
+    }
+  }
+
+  > .faq-accordion__icon-plus .icon__group { // animated plus icon
+    transform: rotate(0);
+
+    > *:first-child {
+      transform: rotate(0);
+    }
+  }
+}
+
+.js {
+  .faq-accordion__panel {
+    display: none;
+    will-change: height;
+    transform: translateZ(0px);
+    margin: 20px 0 0;
+
+    @media (min-width: 768px) {
+      margin: -3px 0 0;
+    }
+
+    p {
+      font-size: 13px;
+      margin: 18px 0 0;
+      line-height: 1.43em;
+
+      @media (min-width: 768px) {
+        font-size: 14px;
+        margin: 20px 0 0;
+      }
+    }
+  }
+
+  .faq-accordion__item--is-open > .faq-accordion__panel {
+    display: block;
+  }
+}
+
+// animations
+.faq-accordion[data-animation="on"] {
+  .faq-accordion__item--is-open .faq-accordion__panel > * {
+    animation: accordion-entry-animation .4s var(--ease-out);
+  }
+
+  .faq-accordion__icon-arrow,
+  .faq-accordion__icon-arrow-v2,
+  .faq-accordion__icon-plus {
+    .icon__group {
+      transition: transform .3s var(--ease-out);
+
+      > * {
+        transition: transform .3s, stroke-dashoffset .3s;
+        transition-timing-function: var(--ease-out);
+      }
+    }
+  }
+}
+
+@keyframes accordion-entry-animation {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}

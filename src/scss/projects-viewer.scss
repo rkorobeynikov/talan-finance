@@ -1,0 +1,119 @@
+.projects-viewer {
+  overflow: hidden;
+}
+
+.projects-viewer__tabs-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 16px 0 0;
+}
+
+.projects-viewer__tab-link {
+  color: $color-brand;
+  font-weight: 700;
+  font-family: $body-font;
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+.projects-viewer__tabs-item {
+  margin-right: 32px;
+  margin-bottom: 6px;
+}
+
+.projects-viewer__tabs-item:last-child {
+  margin-right: 0;
+}
+
+.projects-viewer__carousel-title {
+  font-family: $heading-font;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.2em;
+  margin: 30px 0 0;
+}
+
+.projects-viewer__carousel-live-label {
+  display: inline-block;
+  font-family: $heading-font;
+  font-size: 12px;
+  line-height: 1.2em;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: $color-white;
+  background: $color-brand;
+  border-radius: 10px;
+  padding: 3px 11px;
+  margin: 0 0 0 2px;
+}
+
+.projects-viewer__carousel-description {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: $body-font;
+  line-height: 1.42em;
+  margin: 7px 0 0;
+}
+
+.projects-viewer__carousel-link {
+  color: $color-brand;
+  display: inline-block;
+  margin: 2px 0 0;
+  font-size: 14px;
+}
+
+.projects-viewer__image {
+  display: block;
+  max-width: 100%;
+  margin: 14px 0 0;
+}
+
+.projects-viewer .tns-outer {
+  position: relative;
+}
+
+.projects-viewer .tns-outer::after {
+
+
+  @media (min-width: 768px) {
+    content: "";
+    position: absolute;
+    background: linear-gradient(270deg, #FFFFFF 34.4%, rgba(255, 255, 255, 0) 100%);
+    width: 102px;
+    height: 100%;
+    right: -40px;
+    top: 0;
+    pointer-events: none;
+
+  }
+}
+
+
+.projects-viewer .tns-controls button {
+  appearance: none;
+  position: absolute;
+  top: calc(50% + 50px);
+  margin-top: 2px;
+  width: 12px;
+  height: 22px;
+  border: none;
+  padding: 0;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  background: url("data:image/svg+xml,%3Csvg width='12' height='22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 21L1 11 11 1' stroke='%23CEA072' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") 0 0 no-repeat;
+
+}
+
+.projects-viewer .tns-controls button[data-controls="prev"] {
+  left: -30px;
+}
+
+.projects-viewer .tns-controls button[data-controls="next"] {
+  left: 717px;
+  transform: rotate(180deg);
+}
+
+
