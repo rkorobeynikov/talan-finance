@@ -1,5 +1,5 @@
 .hero-section {
-  background: url("../img/hero-bg.jpg") center no-repeat;
+  background: #282a2a url("../img/hero-bg.jpg") center no-repeat;
   background-size: cover;
   color: $color-white;
   padding: 0 0 24px;
@@ -111,10 +111,10 @@
 }
 
 .hero-section__form {
-  margin: 36px 0 0;
   display: none;
 
   @media (min-width: 768px) {
+    margin: 36px 0 20px;
     display: block;
   }
 }
@@ -127,6 +127,14 @@
   @media (min-width: 768px) {
     display: none;
   }
+}
+
+.hero-section__disclaimer {
+  font-size: 10px;
+  color: $color-white;
+  line-height: 1.2em;
+  margin: 10px 0 0;
+  text-align: center;
 }
 
 .hero-section__cta-btn {

@@ -56,6 +56,7 @@
   line-height: 1.43em;
   padding-top: 3px;
   margin: 27px 0 0;
+  min-height: 62px;
 
   @media (min-width: 768px) {
     padding-left: 92px;
@@ -76,16 +77,28 @@
 
 .protection-section__list-item--graph {
   background: url("../img/protection-graph.svg") 0 2px no-repeat;
-  background-size: 66px;
+  background-size: 40px;
+
+  @media (min-width: 768px) {
+    background-size: 66px;
+  }
 }
 
 .protection-section__list-item--hand {
   background: url("../img/protection-hand.svg") 0 2px no-repeat;
-  background-size: 66px;
+  background-size: 40px;
+
+  @media (min-width: 768px) {
+    background-size: 66px;
+  }
 }
 
 .protection-section__list-item--eagles {
   background: url("../img/protection-eagles.svg") 0 2px no-repeat;
-  background-size: 66px;
+  background-size: 40px;
+
+  @media (min-width: 768px) {
+    background-size: 66px;
+  }
 }
 
