@@ -51,10 +51,4 @@ investmentRadios.forEach((item) => {
 
 count();
 
-// investmentRange.addEventListener('mousemove', function() {
-//   var zy = investmentRange.value / 1000000;
-//   var mColor = 'linear-gradient(90deg, rgba(228,190,152,1)' + zy + '% , rgba(192,192,192,1)' + zy + '% )';
-//   moneyRange.style.background = mColor;
-// });
-
 
