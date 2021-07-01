@@ -45,10 +45,12 @@
 
 .videos-carousel__video-opener-btn {
   display: block;
+  cursor: pointer;
 }
 
 .videos-carousel__video-opener-btn img {
   display: block;
+  height: auto;
 }
 
 .videos-carousel .tns-outer {

@@ -65,11 +65,17 @@
   font-size: 14px;
   line-height: 1.2em;
   min-width: 237px;
-
+  cursor: pointer;
 
   @media (min-width: 768px) {
     padding: 13px 11px 12px;
     width: auto;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+    background: lighten($color-brand, 5);
   }
 }
 
@@ -77,6 +83,16 @@
   background: transparent;
   border: 1px solid $color-brand;
   color: $color-brand;
+
+  @media (min-width: 768px) {
+    padding: 12px 11px 10px;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+    background: transparent;
+  }
 }
 
 .form__consent {

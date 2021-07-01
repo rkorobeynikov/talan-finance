@@ -62,7 +62,7 @@
     padding-left: 92px;
     padding-top: 0;
     font-size: 14px;
-    width: 30.84%;
+    width: 48.13%;
     margin: -2px 0 0 3.74%;
   }
 }
@@ -86,15 +86,6 @@
 
 .protection-section__list-item--hand {
   background: url("../img/protection-hand.svg") 0 2px no-repeat;
-  background-size: 40px;
-
-  @media (min-width: 768px) {
-    background-size: 66px;
-  }
-}
-
-.protection-section__list-item--eagles {
-  background: url("../img/protection-eagles.svg") 0 2px no-repeat;
   background-size: 40px;
 
   @media (min-width: 768px) {
