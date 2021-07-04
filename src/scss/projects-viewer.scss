@@ -1,5 +1,7 @@
 .projects-viewer {
   overflow: hidden;
+  padding: 0 30px;
+  margin: 0 -30px;
 }
 
 .projects-viewer__tabs-list {
@@ -104,7 +106,12 @@
   text-indent: 100%;
   white-space: nowrap;
   background: url("data:image/svg+xml,%3Csvg width='12' height='22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 21L1 11 11 1' stroke='%23CEA072' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") 0 0 no-repeat;
+  z-index: 1;
+}
 
+.projects-viewer .tns-controls button:hover,
+.projects-viewer .tns-controls button:focus {
+  opacity: 0.8;
 }
 
 .projects-viewer .tns-controls button[data-controls="prev"] {
