@@ -1,7 +1,10 @@
 .projects-viewer {
   overflow: hidden;
-  padding: 0 30px;
-  margin: 0 -30px;
+
+  @media (min-width: 768px) {
+    padding: 0 30px;
+    margin: 0 -30px;
+  }
 }
 
 .projects-viewer__tabs-list {
