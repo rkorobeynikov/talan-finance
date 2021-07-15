@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   flex-direction: column;
 
-  @media (min-width: 768px) {
+  @media (min-width: 920px) {
     flex-direction: row;
   }
 }
@@ -11,7 +11,7 @@
 .form__item {
   margin: 20px 0 0;
 
-  @media (min-width: 768px) {
+  @media (min-width: 920px) {
     width: 238px;
     margin: 0 0 0 40px;
   }
@@ -20,7 +20,7 @@
 .form__item:first-child {
   margin-top: 0;
 
-  @media (min-width: 768px) {
+  @media (min-width: 920px) {
     margin-left: 0;
   }
 }
@@ -29,7 +29,7 @@
   order: 1;
   margin: 12px 0 0;
 
-  @media (min-width: 768px) {
+  @media (min-width: 920px) {
     margin: 0 0 0 40px;
     order: initial;
   }
@@ -46,7 +46,7 @@
   width: 100%;
   box-sizing: border-box;
 
-  @media (min-width: 768px) {
+  @media (min-width: 920px) {
     font-size: 14px;
     padding: 13px 14px 11px;
   }
@@ -67,7 +67,7 @@
   min-width: 237px;
   cursor: pointer;
 
-  @media (min-width: 768px) {
+  @media (min-width: 920px) {
     padding: 13px 11px 12px;
     width: auto;
   }
@@ -84,7 +84,7 @@
   border: 1px solid $color-brand;
   color: $color-brand;
 
-  @media (min-width: 768px) {
+  @media (min-width: 920px) {
     padding: 12px 11px 10px;
   }
 
